@@ -29,8 +29,11 @@ async def on_message(msg):
     if "https://cdn.discordapp.com/attachments" in msg.content.lower():
         await msg.channel.send(f"Message from {msg.author} has attachments.")
         await msg.channel.send(msg.content.lower())
+    if "https://tenor.com/view" in msg.content.lower():
+        await msg.channel.send(f"Message from {msg.author} has attachments.")
+        await msg.channel.send(msg.content.lower())
     if msg.attachments:
-            await msg.channel.send(f"Message from {msg.author} has attachments.")
+            await msg.channel.send(f"Message from {msg.author.mention} has attachments.")
             for attachment in msg.attachments:
                 await msg.channel.send(f"Attachment name: {attachment.filename}")
                 await msg.channel.send((f"Attachment URL: {attachment.url}"))
