@@ -27,25 +27,37 @@ min_size = (160,160)
 # im.thumbnail(crop_size)
 # im.show()
 
-im = Image.new("RGBA", (280, 120), (200, 200, 200))
+im = Image.new("RGBA", (280, 120), (0, 0, 0, 0))
 d = ImageDraw.Draw(im)
+d.rounded_rectangle(
+    [(0, 0), (280, 120)],radius=6,fill=(200, 200, 200),outline=None         
+)
 # d.rectangle((0, 0, 100, 100), (0, 255, 0, 127))
-d.line((10, 10) + (im.size[0]-10, 10), width=2, fill=(255,255,255))
-d.line((10, 10) + (10, im.size[1]-10), width=2, fill=(255,255,255))
-d.line((10, im.size[1]-10) + (im.size[0]-10, im.size[1]-10), width=2, fill=(255,255,255))
-d.line((im.size[0]-10, im.size[1]-10) + (im.size[0]-10, 10), width=2, fill=(255,255,255))
-# d.line((10, -10) + (10, im.size[1]-10), fill=128)
-# d.line((-10, -10) + (10, im.size[1]-10), fill=128)
-d.circle((10+2,10+2), 2, fill=(255,255,255), outline=None, width=10)
-d.circle((10+2,im.size[1]-10-2), 2, fill=(255,255,255), outline=None, width=1)
-d.circle((im.size[0]-10-2, 10+2), 2, fill=(255,255,255), outline=None, width=1)
-d.circle((im.size[0]-10-2, im.size[1]-10-2), 2, fill=(255,255,255), outline=None, width=1)
-im.show()
-
+# d.line((10, 10) + (im.size[0]-10, 10), width=2, fill=(255,255,255))
+# d.line((10, 10) + (10, im.size[1]-10), width=2, fill=(255,255,255))
+# d.line((10, im.size[1]-10) + (im.size[0]-10, im.size[1]-10), width=2, fill=(255,255,255))
+# d.line((im.size[0]-10, im.size[1]-10) + (im.size[0]-10, 10), width=2, fill=(255,255,255))
+# # d.line((10, -10) + (10, im.size[1]-10), fill=128)
+# # d.line((-10, -10) + (10, im.size[1]-10), fill=128)
+# d.circle((10+2,10+2), 2, fill=(255,255,255), outline=None, width=10)
+# d.circle((10+2,im.size[1]-10-2), 2, fill=(255,255,255), outline=None, width=1)
+# d.circle((im.size[0]-10-2, 10+2), 2, fill=(255,255,255), outline=None, width=1)
+# d.circle((im.size[0]-10-2, im.size[1]-10-2), 2, fill=(255,255,255), outline=None, width=1)
+# im.show()
+d.rounded_rectangle(
+    [(11, 11), (280-11, 120-11)],radius=5,outline=(0,0,0), width=1 
+)
+d.rounded_rectangle(
+    [(10, 10), (280-10, 120-10)],radius=5,outline=(255,255,255), width=1      
+)
+d.rounded_rectangle(
+    [(9, 9), (280-9, 120-9)],radius=5,outline=(0,0,0), width=1 
+)
 pad = 20
 im_padded = ImageOps.expand(im, border=pad, fill=(0,0,0,0))
 
-im_padded.save("./test.png")
+im_padded.show()
+# im_padded.save("./test.png")
 # from PIL import Image, ImageDraw, ImageFont
 
 # get an image
