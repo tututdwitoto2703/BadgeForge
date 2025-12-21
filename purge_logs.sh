@@ -22,6 +22,7 @@ then
     echo ""
     rm -rf ./logs
     mkdir ./logs
+    echo "i generated this as a placeholder to prevent empty folder messing with docker\n ik sounds weird but it is what it is" > ./logs/placeholder.txt
     printf "${GREEN}Purged Successfully [!]\n"
     printf "Exiting...${NC}\n"
 else
