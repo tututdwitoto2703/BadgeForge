@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service</title>
+    <link rel="stylesheet" href="./tos.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">BadgeForge</a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#" >Terms of Service</a></li>
+                <li><a href="../privacy/privacy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="" class="">
+        <div id="content" class="legal-content">
+            <zero-md src="./tos.md">
+                <template>
+                    <link rel="stylesheet" href="md.css">
+                    <link rel="stylesheet" href="md.css">
+                </template>
+            </zero-md>
+        </div>
+    </div>
+    <!-- <script src="tos.js"></script>
+    <script src="cdn.jsdelivr.net"></script> -->
+    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
+    <!-- <zero-md src="./tos.md"></zero-md> -->
+    
+
+    <footer>
+        <div class="footer-links">
+            <a href="../index.html">Home</a>
+            <a href="#" >Terms of Service</a>
+            <a href="../privacy/privacy.html">Privacy Policy</a>
+        </div>
+        <p>&copy; 2025 BadgeForge. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
+
+
+
