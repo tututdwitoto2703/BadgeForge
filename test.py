@@ -8,7 +8,7 @@ from discord.ext import commands
 import logging
 import os
 from dotenv import load_dotenv
-import time
+import time, datetime
 load_dotenv()
 token = os.getenv("DISCORD_TOKEN")
 
@@ -72,6 +72,39 @@ async def create(ctx, *, content=None):
     output_buffer.seek(0)
     discord_file = discord.File(fp=output_buffer, filename=f"Badge_{content_item[0]}.png")
     await ctx.send("Here is your edited image:", file=discord_file)
+
+
+@bot.command()
+async def interactive(ctx):
+    await ctx.send(f"hi!")
+
+@bot.command()
+async def info(ctx):
+    await ctx.send(f"embed here!")
+    embed = discord.Embed(
+        colour=255,
+        title="Bot",
+        description="desc",
+        url="https://google.com",
+        # timestamp=datetime.datetime,
+
+    )
+    embed.set_thumbnail(url="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=")
+    embed.add_field(name="f-1", value="hello there!")
+    embed.add_field(name="f-1", value="hello there!")
+    embed.add_field(name="f-1", value="hello there!")
+    embed.add_field(name="f-1", value="hello there!", inline=False)
+    embed.add_field(name="f-1", value="hello there!", inline=False)
+    embed.add_field(name="f-1", value="hello there!")
+    embed.add_field(name="f-1", value="hello there!")
+
+    embed.set_footer(text="hi", icon_url="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=")
+    # embed.set_author(name=ctx.message.author)
+    embed.set_author(name="BadgeForge", icon_url="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=")
+    await ctx.send(embed=embed)
+# add this outside to prevent creating embed everytime and call it inside function 
+
+
 
 #todo - save the attachments temporarily and only save if less than 8mb 
 # and delete after 3mins(or wtv depending on time) 
