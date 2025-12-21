@@ -1,2 +1,6 @@
 discord.py
 python-dotenv
+Pillow #this is for PIL btw its called Pillow if you are wondering :)
+
+# i will edit maybe when i figure out better libs or efficient ones but rn 
+# these work the best so ill go with these
