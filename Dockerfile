@@ -54,4 +54,5 @@ USER appuser
 EXPOSE 8000
 
 # Run the application.
-CMD python3 rapid_deployment.py
+# change this in final prod release as ill change the file too PRODUCTION!!
+CMD python3 test.py
