@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+    background: #0a0a0a;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #1a1a1a;
+    z-index: 1000;
+}
+
+nav .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav .nav-links a {
+    color: #b0b0b0;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+nav .nav-links a:hover {
+    color: #fff;
+}
+
+.hero {
+    margin-top: 80px;
+    padding: 8rem 2rem 6rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    color: #a0a0a0;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+}
+
+.hero-image {
+    max-width: 800px;
+    width: 100%;
+    margin: 3rem auto 0;
+    border: 1px solid #1a1a1a;
+    background: #0f0f0f;
+    aspect-ratio: 16/9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #505050;
+    font-size: 1rem;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: #fff;
+    color: #0a0a0a;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
+}
+
+.features {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 6rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
+}
+
+.feature {
+    padding: 2rem;
+    border: 1px solid #1a1a1a;
+    background: #0f0f0f;
+    transition: border-color 0.3s;
+}
+
+.feature:hover {
+    border-color: #333;
+}
+
+.feature h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.feature p {
+    color: #a0a0a0;
+    font-size: 1rem;
+}
+
+.feature-image {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: #0a0a0a;
+    border: 1px solid #1a1a1a;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #505050;
+    font-size: 0.9rem;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.feature-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+}
+
+.showcase {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 6rem 2rem;
+}
+
+.showcase h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    color: #fff;
+}
+
+.showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.showcase-item {
+    background: #0f0f0f;
+    border: 1px solid #1a1a1a;
+    padding: 1.5rem;
+}
+
+.showcase-item-image {
+    width: 100%;
+    aspect-ratio: 4/3;
+    background: #0a0a0a;
+    border: 1px solid #1a1a1a;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #505050;
+    font-size: 0.9rem;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.showcase-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+}
+
+.showcase-item h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.showcase-item p {
+    color: #a0a0a0;
+    font-size: 0.95rem;
+}
+
+.legal-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 8rem 2rem 4rem;
+    min-height: calc(100vh - 200px);
+}
+
+.legal-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.legal-content {
+    padding: 2rem;
+    background: #0f0f0f;
+    border: 1px solid #1a1a1a;
+    min-height: 400px;
+}
+
+footer {
+    border-top: 1px solid #1a1a1a;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #707070;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+footer p {
+    color: #505050;
+    font-size: 0.9rem;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav .container {
+        padding: 1rem;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    nav .nav-links {
+        position: fixed;
+        top: 65px;
+        left: -100%;
+        width: 100%;
+        background: rgba(10, 10, 10, 0.98);
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1.5rem;
+        border-bottom: 1px solid #1a1a1a;
+        transition: left 0.3s;
+    }
+
+    nav .nav-links.active {
+        left: 0;
+    }
+
+    .hero {
+        padding: 5rem 1.5rem 4rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .hero-image {
+        max-width: 100%;
+        margin: 2rem auto 0;
+    }
+
+    .features {
+        padding: 4rem 1.5rem;
+        gap: 2rem;
+    }
+
+    .showcase {
+        padding: 4rem 1.5rem;
+    }
+
+    .showcase h2 {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .showcase-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .legal-page {
+        padding: 6rem 1.5rem 3rem;
+    }
+}
