@@ -6,15 +6,21 @@
 # This service is built from the Dockerfile in the current directory.
 # You can add other services your application may depend on here, such as a
 # database or a cache. For examples, see the Awesome Compose repository:
-# https://github.com/docker/awesome-compose
+# https://github.com/docker/awesome-compose    
 services:
   server:
     build:
       context: .
+      dockerfile: docker/Dockerfile
+    image: badgeforge:latest
+    container_name: BadgeForge_container
     ports:
-      - 8000:8000
+      - "8000:8000"
+    volumes:
+      - ./logs:/app/logs
     env_file:
       - .env
+
 
 
 # The commented out section below is an example of how to define a PostgreSQL
